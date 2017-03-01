@@ -12,6 +12,14 @@ Or, install with yarn: `yarn add react-native-checkout-mercadopago`.
 
 Either way, then link with `react-native link react-native-checkout-mercadopago`.
 
+# iOS
+
+1. Download MercadoPago´s [SDK for iOS](https://github.com/mercadopago/px-ios).
+2. Open your project in XCode and drag MercadoPagoSDK.xcodeproj into the 'Libraries' folder of your app.
+3. Navigate to the target configuration window by clicking on the blue project icon, and selecting the application target under the "Targets" heading in the sidebar.
+4. In the 'General' panel, go to the 'Embedded Binaries' section.
+5. Click on the '+' button and select 'MercadoPagoSDK.framework' under `Libraries > MercadoPagoSDK.xcodeproj > Products` from your project
+ 
 ## Usage
 
 ```javascript
