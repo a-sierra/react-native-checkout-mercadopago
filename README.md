@@ -19,7 +19,18 @@ Either way, then link with `react-native link react-native-checkout-mercadopago`
 3. Navigate to the target configuration window by clicking on the blue project icon, and selecting the application target under the "Targets" heading in the sidebar.
 4. In the 'General' panel, go to the 'Embedded Binaries' section.
 5. Click on the '+' button and select 'MercadoPagoSDK.framework' under `Libraries > MercadoPagoSDK.xcodeproj > Products` from your project
- 
+
+### Android
+
+Change your project's `/android/app/build.gradle` to compile against version 24 of the Android SDK. 
+
+```
+android {
+  compileSdkVersion 24
+  buildToolsVersion "24.0.1"
+}
+```
+
 ## Usage
 
 ```javascript
